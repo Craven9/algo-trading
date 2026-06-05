@@ -1,0 +1,14 @@
+{
+  "bot_should_run": true,
+  "paused": false,
+  "stop_requested": false,
+  "refresh_requested": false,
+  "requested_action": "start",
+  "requested_dry_run": false,
+  "paper_trading_only": true,
+  "allow_live_money": false,
+  "safety_lock": false,
+  "message": "Paper trading mode enabled",
+  "created_at": "2026-06-05T18:52:08.593845+00:00",
+  "updated_at": "2026-06-05T19:39:00.739378+00:00"
+}

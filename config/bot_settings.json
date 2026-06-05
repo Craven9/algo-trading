@@ -1,0 +1,298 @@
+{
+  "_comment": "Master control file for the AI Trading Assistant. All modules read from this file via config_loader.py. Edit values here \u2014 do not hardcode settings in source files.",
+  "mode": {
+    "paper_trading_only": true,
+    "dry_run": false,
+    "after_hours_scan_only": false,
+    "safety_lock": false,
+    "allow_live_money": false,
+    "manage_open_trades_only": false,
+    "bot_enabled": true
+  },
+  "scanner": {
+    "enabled": true,
+    "allow_manual_candidates": true,
+    "allow_scanner_candidates": true,
+    "watchlist_mode": "manual_plus_scanner",
+    "min_relative_volume": 0.0,
+    "min_day_change_percent": -100.0,
+    "max_spread_percent": 100.0,
+    "min_dollar_volume": 0,
+    "max_price": 1000.0,
+    "min_price": 0.01,
+    "max_candidates_per_loop": 20,
+    "scan_interval_seconds": 60,
+    "exclude_otc": true,
+    "exclude_etfs": false
+  },
+  "indicators": {
+    "rsi_period": 14,
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "atr_period": 14,
+    "ma_fast": 9,
+    "ma_slow": 20,
+    "volume_ma_period": 20,
+    "candle_lookback": 5,
+    "max_vwap_extension_pct": 8.0
+  },
+  "entry_rules": {
+    "minimum_setup_score": 78,
+    "minimum_probability_score": 75,
+    "minimum_final_trade_quality_score": 80,
+    "preferred_setup_score": 82,
+    "preferred_probability_score": 80,
+    "preferred_final_trade_quality_score": 88,
+    "minimum_reward_to_risk": 3.0,
+    "preferred_reward_to_risk": 5.0,
+    "max_entry_extension_percent": 8.0,
+    "require_clear_stop": true,
+    "require_clear_target": true,
+    "require_volume_confirmation": true,
+    "require_vwap_confirmation": true,
+    "block_failed_reclaims": true,
+    "block_hype_only_trades": true,
+    "block_if_below_vwap_no_reclaim": true,
+    "block_if_under_0618_fib_after_failed_reclaim": true,
+    "max_quote_age_seconds": 20,
+    "min_reward_to_risk_hard_block": 2.0
+  },
+  "risk": {
+    "max_open_positions": 5,
+    "max_daily_loss_dollars": 100,
+    "max_position_size_dollars": 250,
+    "max_total_exposure_percent": 30,
+    "max_risk_dollars_per_trade": 25,
+    "minimum_reward_to_risk": 3.0,
+    "preferred_reward_to_risk": 5.0,
+    "block_new_trades_after_daily_loss": true,
+    "reduce_size_after_loss_streak": true,
+    "loss_streak_limit": 2,
+    "loss_streak_size_reduction_percent": 50,
+    "confidence_sizing": {
+      "enabled": true,
+      "score_90_plus_size_pct": 100,
+      "score_85_to_89_size_pct": 75,
+      "score_80_to_84_size_pct": 50,
+      "below_80_no_trade": true
+    }
+  },
+  "execution": {
+    "default_order_type": "marketable_limit",
+    "marketable_limit_buffer_percent": 0.25,
+    "max_quote_age_seconds": 20,
+    "max_trade_age_seconds": 20,
+    "confirm_position_before_buy": true,
+    "confirm_spread_before_buy": true,
+    "confirm_paper_trading_before_buy": true,
+    "max_spread_percent_at_execution": 3.0
+  },
+  "setups": {
+    "break_and_hold": {
+      "enabled": true,
+      "min_hold_bars": 2,
+      "require_volume_confirmation": true
+    },
+    "bottom_base": {
+      "enabled": true,
+      "min_base_bars": 3,
+      "max_base_range_percent": 5.0,
+      "require_volume_expansion": true
+    },
+    "vwap_reclaim": {
+      "enabled": true,
+      "require_higher_low": true,
+      "require_volume_on_reclaim": true,
+      "max_distance_from_vwap_percent": 3.0
+    },
+    "opening_range_breakout": {
+      "enabled": true,
+      "opening_range_minutes": 15,
+      "require_volume_confirmation": true,
+      "require_hold_above_range": true
+    },
+    "liquidity_sweep_reclaim": {
+      "enabled": true,
+      "require_reclaim_within_bars": 3,
+      "require_higher_low_after_reclaim": true
+    },
+    "fibonacci_pullback": {
+      "enabled": true,
+      "preferred_retracement_levels": [
+        0.382,
+        0.5,
+        0.618
+      ],
+      "max_distance_from_fib_percent": 2.0,
+      "require_vwap_confirmation": true,
+      "require_higher_low": true
+    }
+  },
+  "fibonacci_strategy": {
+    "enabled": true,
+    "use_for_entry_confirmation": true,
+    "use_for_target_confirmation": true,
+    "use_extensions_for_runner_targets": true,
+    "retracement_levels": [
+      0.236,
+      0.382,
+      0.5,
+      0.618,
+      0.786
+    ],
+    "extension_levels": [
+      1.272,
+      1.414,
+      1.618,
+      2.0,
+      2.618
+    ],
+    "preferred_retracements": [
+      0.382,
+      0.5,
+      0.618
+    ],
+    "preferred_extensions": [
+      1.272,
+      1.618,
+      2.0,
+      2.618
+    ],
+    "max_distance_from_fib_level_percent": 2.0,
+    "require_vwap_confirmation": true,
+    "require_higher_low_confirmation": true,
+    "block_if_under_0618_after_failed_reclaim": true
+  },
+  "exits": {
+    "initial_stop_enabled": true,
+    "break_even_enabled": true,
+    "break_even_trigger_percent": 8.0,
+    "break_even_trigger_r_multiple": 1.0,
+    "move_stop_to_entry_at_break_even": true,
+    "partial_profit_enabled": true,
+    "first_partial_percent_gain": 15.0,
+    "first_partial_sell_percent": 50,
+    "second_partial_extension_level": 1.618,
+    "second_partial_sell_percent": 25,
+    "trailing_stop_enabled": true,
+    "trailing_stop_method": "higher_low",
+    "failed_breakout_exit_enabled": true,
+    "volume_fade_exit_enabled": true,
+    "max_loss_exit_enabled": true,
+    "use_fibonacci_extension_targets": true,
+    "fibonacci_extension_targets": {
+      "target_1_extension": 1.272,
+      "target_2_extension": 1.618,
+      "runner_extension": 2.0,
+      "parabolic_extension": 2.618
+    },
+    "exit_score_check_interval_seconds": 30
+  },
+  "opening_range": {
+    "range_5m_enabled": true,
+    "range_15m_enabled": true,
+    "range_30m_enabled": true,
+    "preferred_range_minutes": 15,
+    "failed_breakout_bars_threshold": 3
+  },
+  "learning": {
+    "enabled": true,
+    "enable_historical_trade_analyzer": true,
+    "minimum_sample_size": 10,
+    "max_historical_bonus_points": 5,
+    "max_historical_penalty_points": 10,
+    "backtest_after_closed_trade": true,
+    "review_every_closed_trade": true,
+    "performance_lookback_days": 30,
+    "learning_adjustment_method": "weighted_recent"
+  },
+  "frontend": {
+    "enabled": true,
+    "auto_refresh_seconds": 5,
+    "show_rejected_trades": true,
+    "show_exit_warnings": true,
+    "show_trade_reasons": true,
+    "allow_mode_controls": true,
+    "require_confirmation_for_dangerous_settings": true,
+    "api_port": 8000,
+    "api_host": "0.0.0.0"
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_to_file": true,
+    "log_to_console": true,
+    "bot_activity_log": "logs/bot_activity.log",
+    "order_activity_log": "logs/order_activity.log",
+    "rejection_log": "logs/rejection_log.json",
+    "exit_log": "logs/exit_log.json",
+    "error_log": "logs/error_log.log",
+    "max_log_size_mb": 50,
+    "backup_count": 5
+  },
+  "session": {
+    "market_open": "09:30",
+    "market_close": "16:00",
+    "pre_market_start": "04:00",
+    "after_hours_end": "20:00",
+    "timezone": "America/New_York",
+    "avoid_first_minutes": 1,
+    "avoid_last_minutes": 5,
+    "high_risk_windows": [
+      {
+        "start": "09:30",
+        "end": "09:31",
+        "reason": "open_volatility"
+      },
+      {
+        "start": "15:55",
+        "end": "16:00",
+        "reason": "close_volatility"
+      }
+    ]
+  },
+  "watchlist": {
+    "manual_watchlist_path": "watchlist/manual_watchlist.json",
+    "scanner_candidates_path": "watchlist/scanner_candidates.json",
+    "active_candidates_path": "watchlist/active_candidates.json"
+  },
+  "paths": {
+    "open_trades_dir": "trades/open/",
+    "closed_trades_dir": "trades/closed/",
+    "rejected_trades_dir": "trades/rejected/",
+    "reviews_dir": "trades/reviews/",
+    "backtest_results_dir": "backtests/results/",
+    "market_data_cache_dir": "data/market_data_cache/",
+    "scanner_snapshots_dir": "data/scanner_snapshots/",
+    "indicator_snapshots_dir": "data/indicator_snapshots/",
+    "session_snapshots_dir": "data/session_snapshots/"
+  },
+  "market_data": {
+    "_comment": "Controls which data source is used for market data. Alpaca handles orders/account. Massive handles market data.",
+    "primary_source": "alpaca",
+    "live_source": "alpaca",
+    "fallback_source": "alpaca",
+    "use_massive_rest": false,
+    "use_massive_websocket": false,
+    "use_flat_files_for_backtest": false,
+    "massive": {
+      "rest_enabled": false,
+      "websocket_enabled": false,
+      "use_delayed_feed": true,
+      "websocket_delayed_url": "wss://delayed.massive.com/stocks",
+      "websocket_realtime_url": "wss://socket.massive.com/stocks",
+      "rest_base_url": "https://api.massive.com",
+      "max_subscriptions": 50,
+      "reconnect_delay_seconds": 5,
+      "max_reconnect_attempts": 10
+    },
+    "flat_files": {
+      "enabled": false,
+      "s3_endpoint": "https://files.massive.com",
+      "s3_bucket": "flatfiles",
+      "local_cache_dir": "data/flatfiles/",
+      "default_prefix": "us_stocks_sip",
+      "auto_download": false
+    }
+  }
+}
