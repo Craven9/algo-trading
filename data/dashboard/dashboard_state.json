@@ -3,7 +3,7 @@
     "status": "started",
     "name": "AI Trading Assistant",
     "version": "",
-    "updated_at": "2026-06-05T20:33:33.042515+00:00"
+    "updated_at": "2026-06-05T20:35:33.534414+00:00"
   },
   "mode": {
     "bot_enabled": true,
@@ -26,20 +26,20 @@
         "day_change_pct": 66.3636,
         "dollar_volume": 1108340.0,
         "candidate_reason": "RVOL 10.5x, +66.4% move",
-        "scanned_at": "2026-06-05T20:33:33.018090+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508720+00:00"
       },
       {
         "ticker": "SOXS",
         "source": "scanner",
-        "price": 7.05,
-        "bid": 7.05,
-        "ask": 7.06,
-        "spread_percent": 0.1416,
+        "price": 7.09,
+        "bid": 7.08,
+        "ask": 7.09,
+        "spread_percent": 0.141,
         "relative_volume": 1.47,
-        "day_change_pct": 35.3167,
-        "dollar_volume": 164559993.0,
-        "candidate_reason": "+35.3% move, tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018345+00:00"
+        "day_change_pct": 36.0845,
+        "dollar_volume": 165588744.0,
+        "candidate_reason": "+36.1% move, tight spread",
+        "scanned_at": "2026-06-05T20:35:33.508981+00:00"
       },
       {
         "ticker": "LSE",
@@ -52,20 +52,7 @@
         "day_change_pct": -4.7423,
         "dollar_volume": 6981.0,
         "candidate_reason": "RVOL 8.6x, tight spread",
-        "scanned_at": "2026-06-05T20:33:33.017922+00:00"
-      },
-      {
-        "ticker": "TZA",
-        "source": "scanner",
-        "price": 4.8,
-        "bid": 4.78,
-        "ask": 4.79,
-        "spread_percent": 0.2088,
-        "relative_volume": 1.11,
-        "day_change_pct": 13.0742,
-        "dollar_volume": 128011853.0,
-        "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018534+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508552+00:00"
       },
       {
         "ticker": "STI",
@@ -78,7 +65,7 @@
         "day_change_pct": 61.2182,
         "dollar_volume": 3088520.0,
         "candidate_reason": "+61.2% move",
-        "scanned_at": "2026-06-05T20:33:33.018199+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508829+00:00"
       },
       {
         "ticker": "STAK",
@@ -91,7 +78,20 @@
         "day_change_pct": 19.8582,
         "dollar_volume": 162341.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018016+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508646+00:00"
+      },
+      {
+        "ticker": "TZA",
+        "source": "scanner",
+        "price": 4.8,
+        "bid": 4.78,
+        "ask": 4.81,
+        "spread_percent": 0.6237,
+        "relative_volume": 1.11,
+        "day_change_pct": 13.0742,
+        "dollar_volume": 128011901.0,
+        "candidate_reason": "tight spread",
+        "scanned_at": "2026-06-05T20:35:33.509170+00:00"
       },
       {
         "ticker": "AAPL",
@@ -104,7 +104,7 @@
         "day_change_pct": -1.2789,
         "dollar_volume": 672363638.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.017743+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508370+00:00"
       },
       {
         "ticker": "CRDO",
@@ -115,9 +115,9 @@
         "spread_percent": 0.0,
         "relative_volume": 1.8,
         "day_change_pct": -4.8952,
-        "dollar_volume": 110429729.0,
+        "dollar_volume": 110430971.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018381+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509017+00:00"
       },
       {
         "ticker": "DXST",
@@ -130,7 +130,7 @@
         "day_change_pct": 22.2561,
         "dollar_volume": 11180.0,
         "candidate_reason": "+22.3% move, tight spread",
-        "scanned_at": "2026-06-05T20:33:33.017874+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508504+00:00"
       },
       {
         "ticker": "T",
@@ -143,7 +143,7 @@
         "day_change_pct": -0.1316,
         "dollar_volume": 98038472.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018546+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509182+00:00"
       },
       {
         "ticker": "BE",
@@ -154,9 +154,9 @@
         "spread_percent": 0.0,
         "relative_volume": 2.24,
         "day_change_pct": -9.4752,
-        "dollar_volume": 110483866.0,
+        "dollar_volume": 110484921.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018569+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509205+00:00"
       },
       {
         "ticker": "INTC",
@@ -167,9 +167,9 @@
         "spread_percent": 0.0,
         "relative_volume": 2.59,
         "day_change_pct": -12.7751,
-        "dollar_volume": 650521755.0,
+        "dollar_volume": 650531505.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.019011+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509660+00:00"
       },
       {
         "ticker": "PCLA",
@@ -182,7 +182,7 @@
         "day_change_pct": 19.4444,
         "dollar_volume": 4949.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018051+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508682+00:00"
       },
       {
         "ticker": "TSM",
@@ -193,9 +193,9 @@
         "spread_percent": 0.0,
         "relative_volume": 1.61,
         "day_change_pct": -7.8992,
-        "dollar_volume": 322385101.0,
+        "dollar_volume": 322386739.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018955+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509602+00:00"
       },
       {
         "ticker": "HON",
@@ -208,7 +208,7 @@
         "day_change_pct": -1.6975,
         "dollar_volume": 42226599.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018884+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509540+00:00"
       },
       {
         "ticker": "PLTR",
@@ -221,7 +221,7 @@
         "day_change_pct": -4.2914,
         "dollar_volume": 148996195.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.017813+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508441+00:00"
       },
       {
         "ticker": "HOOD",
@@ -234,7 +234,7 @@
         "day_change_pct": -7.0147,
         "dollar_volume": 95656825.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018405+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509040+00:00"
       },
       {
         "ticker": "ORCL",
@@ -245,9 +245,9 @@
         "spread_percent": 0.0,
         "relative_volume": 1.56,
         "day_change_pct": -10.5666,
-        "dollar_volume": 200316083.0,
+        "dollar_volume": 200335104.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018649+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509287+00:00"
       },
       {
         "ticker": "AMD",
@@ -258,9 +258,9 @@
         "spread_percent": 0.0,
         "relative_volume": 1.5,
         "day_change_pct": -11.2891,
-        "dollar_volume": 523553766.0,
+        "dollar_volume": 523559798.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.017800+00:00"
+        "scanned_at": "2026-06-05T20:35:33.508428+00:00"
       },
       {
         "ticker": "AMAT",
@@ -273,7 +273,7 @@
         "day_change_pct": -9.6984,
         "dollar_volume": 143818010.0,
         "candidate_reason": "tight spread",
-        "scanned_at": "2026-06-05T20:33:33.018966+00:00"
+        "scanned_at": "2026-06-05T20:35:33.509613+00:00"
       }
     ],
     "ranked_candidates": [],
@@ -309,7 +309,7 @@
     "manual_performance": {},
     "source_file_count": 0,
     "skipped_file_count": 0,
-    "calculated_at": "2026-06-05T20:33:33.041467+00:00"
+    "calculated_at": "2026-06-05T20:35:33.533369+00:00"
   },
   "learning": {
     "trade_count": 0,
@@ -328,7 +328,7 @@
     "warnings": [
       "No closed trades found \u2014 no learning summary available"
     ],
-    "generated_at": "2026-06-05T20:33:33.041598+00:00"
+    "generated_at": "2026-06-05T20:35:33.533499+00:00"
   },
   "warnings": [],
   "errors": [],
@@ -337,5 +337,5 @@
     "exit_orders": [],
     "exit_decisions": []
   },
-  "updated_at": "2026-06-05T20:33:33.042959+00:00"
+  "updated_at": "2026-06-05T20:35:33.534826+00:00"
 }
