@@ -7,12 +7,12 @@
 
 # ── Alpaca paper trading keys ────────────────────────────────────────────────
 # Get these from your Alpaca paper trading dashboard.
-ALPACA_API_KEY=PKJ2MAH3KNI7L4QAGADZSOUX2P
-ALPACA_SECRET_KEY=318PGmivLWNaTYww6pReHD6nQa4KKpgcp593NgmRVUbt
+ALPACA_API_KEY=
+ALPACA_SECRET_KEY=
 
 # ── Massive / Polygon market data key ────────────────────────────────────────
 # Use whichever key your project uses for market data.
-MASSIVE_API_KEY=XFg60j_CUMxy8O8fUJuLLfalKKx73E5Q
+MASSIVE_API_KEY=
 
 # Optional alternative name if your code checks POLYGON_API_KEY.
 POLYGON_API_KEY=put_your_massive_or_polygon_api_key_here
